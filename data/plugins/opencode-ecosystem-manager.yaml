@@ -1,7 +1,7 @@
 name: Ecosystem Manager
 repo: https://github.com/WindToFly/OpencodeDesktopPluginManager
-tagline: One switchboard for 39 OpenCode plugins
-description: Browse the OpenCode plugin ecosystem from a tool, slash command, or local dashboard. Check V1/V2 compatibility and npm availability, then install or uninstall plugins with one toggle while only touching the ones you selected.
+tagline: One switchboard for 161 official and community OpenCode plugins
+description: Browse 39 official and 122 awesome-opencode community plugins from one tool, slash command, or local dashboard. Check descriptions, V1/V2 compatibility and npm availability, toggle guarded installs, and check or apply plugin updates, including the manager itself.
 scope:
   - global
 tags:
@@ -9,6 +9,7 @@ tags:
   - manager
   - dashboard
   - configuration
+  - updates
 min_version: 2.0.0
 homepage: https://github.com/WindToFly/OpencodeDesktopPluginManager#readme
 installation: |
@@ -16,4 +17,4 @@ installation: |
   opencode plugin add opencode-ecosystem-manager
   ```
 
-  Then run `/ecosystem ui` to open the dashboard, or `/ecosystem list` to see the catalog in the terminal.
+  Then run `/ecosystem ui` to open the dashboard, `/ecosystem list` to see the catalog in the terminal, or `/ecosystem updates` to check for plugin upgrades (the manager is included). Use `/ecosystem upgrade [name...]` to apply them.
